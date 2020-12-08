@@ -1,0 +1,46 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0%;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  background: #acb6e5;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #86fde8, #acb6e5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #86fde8, #acb6e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+a{
+  color: #333;
+  text-decoration: none;
+}
+
+.App {
+  text-align: center;
+  text-transform: initial;
+  background-color: lavender;
+  height: auto;
+  margin:0 auto;
+  padding-top: 10px;
+  font-weight: inherit;
+}
+
+.btn{
+  display: inline-block;
+  border: none;
+  background-color: #555;
+  color: white;
+  padding: 7px 20px;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: #666;
+}
+
+.container{
+  padding:0.1rem;
+}
+
