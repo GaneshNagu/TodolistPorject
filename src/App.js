@@ -35,7 +35,7 @@ class App extends Component {
         console.log(err);
       })
 
-    // console.log(this.state.todos)
+    console.log(this.state.todos)
   }
 
   componentDidMount(){
@@ -76,19 +76,22 @@ class App extends Component {
 
 
   AddTodo=(newTask)=>{
+  
     const newTtaskTodo={
       id:uuidv4(),
       task:newTask,
       completed:false
     }
+    console.log('from newTtaskTodo',newTtaskTodo);
+
     axios.post('https://mytodolist-743cc-default-rtdb.europe-west1.firebasedatabase.app/MyTodolist.json',newTtaskTodo)
     .then(res=>    
       this.setState({todos:[...this.state.todos,newTtaskTodo]})
-     ).catch(err=>{
+           ).catch(err=>{
            console.log(err);
          })
          
-      
+         console.log(this.state.todos)
     }
     newuserid=(userid)=>{
       const newuserid=userid
